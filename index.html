@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            family recognizer
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<center>
+    <h1>Family recognizer</h1>
+    <br><br>
+    <b style=font-size:20px class="name_of_object">
+        avani
+        <br>
+        sister
+        <br>
+        mother
+        <br>
+        father
+        <br>
+    </b>
+    <label>Webcam View - </label>
+    <div id="camera"></div>
+          <br><br>
+    <div id="result"></div>
+          <br><br>
+    <button onclick="take_family_photo();" class="btn btn-info">take the picture</button>
+          <br><br>
+    <button onclick="check();" class="btn btn-success">identify fanily member</button>
+          <br><br>
+    
+          <p style="font-size: 22px;">family member :<span id="result_object_name"></span>  </p>
+          <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
+        </center>
+    
+      </div>
+    <script src="main.js"></script>
+
+</center>
+    </body>
+</html>
